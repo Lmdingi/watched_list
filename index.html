@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watched List</title>
+    <link rel="stylesheet" href="./src/style.css">
+
+</head>
+
+<body>
+    <nav>
+        <form action="/" method="POST">
+            <label for="movie-name">Title:</label>
+            <input type="text" name="movie-name" id="movie-name" required>
+
+            <label for="movie-rate">Rate:</label>
+            <input type="number" name="movie-rate" id="movie-rate" required>
+
+            <label for="date-watched">Date Watched:</label>
+            <input type="date" name="date-watched" id="date-watched" required>
+
+            <label for="poster-link">Poster Link:</label>
+            <input type="text" name="poster-link" id="poster-link" required>
+
+            <button id="submit" type="submit">Submit</button>
+            <p id="logo">My Watched List</p>
+        </form>
+    </nav>
+
+    <div class="board">
+        <div id="posters-board">
+            <!--  -->
+            <!--  -->
+        </div>
+        <div class="list">
+            <ul id="ol-list">
+                <!--  -->
+                <!--  -->
+            </ul>
+        </div>
+    </div>
+    <script src="./src/client.js"></script>
+</body>
+
+</html>
