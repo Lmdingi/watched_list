@@ -3,7 +3,6 @@ const { pool } = require("./config");
 
 async function importQuery({ queryFilePath, values }) {
   let selectedQuery = fs.readFileSync(queryFilePath, "utf8");
-  console.log("selectedQuery:", selectedQuery); //
 
   if (selectedQuery.includes("$")) {
     const firstPart = selectedQuery.slice(0, selectedQuery.indexOf("$"));

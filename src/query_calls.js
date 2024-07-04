@@ -1,13 +1,13 @@
 const { importQuery } = require("./helper_functions");
 const { successMessage } = require("./helper_object");
 
-async function createVisitorsTable() {
+async function createMoviesTable() {
   const filePath = "src/queries/create_table.sql";
   await importQuery({ queryFilePath: filePath });
   return successMessage.createTable;
 }
 /** */
-// createVisitorsTable().then((data) => console.log(data));
+// createMoviesTable().then((data) => console.log(data));
 /** */
 
 async function addNewMovie({ movieName, movieRate, dateWatched, posterLink }) {
@@ -35,3 +35,5 @@ async function listAllMovies() {
 /** */
 // listAllMovies().then((data) => console.log(data));
 /** */
+
+module.exports = { addNewMovie, listAllMovies };
